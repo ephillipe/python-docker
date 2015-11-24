@@ -36,3 +36,7 @@ Default requirements
  - redis==2.10.3
 
 
+Authors
+
+- Erick Almeida
+- Erick Ponce Leão
