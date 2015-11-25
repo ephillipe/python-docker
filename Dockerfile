@@ -5,8 +5,9 @@ RUN apt-get update \
     && apt-get -q -y clean 
 
 ENV TZ=America/Sao_Paulo
-RUN rm -vf /etc/localtime
-    && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+RUN rm -vf /etc/localtime \
+    && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime  \
+    && echo $TZ > /etc/timezone
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
