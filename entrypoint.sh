@@ -17,4 +17,4 @@ echo "Preparing environment..."
 pip install --upgrade -r $APP_REQUIREMENTS
 
 echo "Starting application..."
-exec @1
+exec "$@"
