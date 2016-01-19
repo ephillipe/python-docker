@@ -19,4 +19,6 @@ ADD requirements.txt /usr/src/requirements.txt
 
 RUN pip install -r /usr/src/requirements.txt
 
-CMD ["/var/tmp/entrypoint.sh"]
+ENTRYPOINT ["/var/tmp/entrypoint.sh"]
+CMD ["uwsgi", "--ini uwsgi.ini"]
+

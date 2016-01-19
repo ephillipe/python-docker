@@ -17,6 +17,4 @@ echo "Preparing environment..."
 pip install --upgrade -r $APP_REQUIREMENTS
 
 echo "Starting application..."
-python $APP_SCRIPT --port=$APP_PORT
-
-exit 0
+exec @1
