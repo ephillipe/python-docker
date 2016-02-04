@@ -41,6 +41,11 @@ Default requirements
  - ujson==1.34
  - boto==2.28.0
  - python-crontab==1.9.3
+ 
+Extra packages
+  - enchant
+  - cron
+  - cronlock (https://github.com/kvz/cronlock)
 
 
 Authors
