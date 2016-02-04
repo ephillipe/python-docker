@@ -13,8 +13,11 @@ echo "Application port: " $APP_PORT
 export PYTHONPATH="${PYTHONPATH}":$CURRENT_DIR
 echo "Current PYTHONPATH:" $PYTHONPATH
 
-echo "Preparing environment..."
+echo "Preparing Python environment..."
 pip install --upgrade -r $APP_REQUIREMENTS
+
+echo "Starting cron..."
+service cron start
 
 echo "Starting application..."
 exec "$@"
