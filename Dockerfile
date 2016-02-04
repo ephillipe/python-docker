@@ -18,8 +18,7 @@ ADD entrypoint.sh /var/tmp/entrypoint.sh
 ADD requirements.txt /usr/src/requirements.txt
 
 RUN curl -q -L https://raw.github.com/kvz/cronlock/master/cronlock -o /usr/bin/cronlock \
-	&& chmod +x /usr/bin/cronlock \
-	&& service cron start
+	&& chmod +x /usr/bin/cronlock
 
 RUN pip install --upgrade pip \
 	&& pip install -r /usr/src/requirements.txt
