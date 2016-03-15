@@ -1,7 +1,7 @@
 FROM python:2.7
 RUN apt-get update \
     && apt-get install -y \
-       enchant cron unixodbc unixodbc-dev \
+       enchant cron unixodbc unixodbc-dev openssl \
     && apt-get -q -y clean 
 
 ENV TZ=America/Sao_Paulo

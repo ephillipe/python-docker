@@ -19,5 +19,8 @@ pip install --upgrade -r $APP_REQUIREMENTS
 echo "Starting cron..."
 service cron start
 
+echo "Increasing somaxconn..."
+sysctl -w net.core.somaxconn=1024
+
 echo "Starting application..."
 exec "$@"
