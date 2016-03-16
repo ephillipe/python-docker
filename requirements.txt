@@ -20,7 +20,7 @@ python-dateutil==2.2
 psycopg2==2.5.4
 pypgwrap==0.1.14
 django-dbarray==0.2
-gevent==1.1rc3
+gevent==1.1.0
 requests==2.9.1
 psycogreen==1.0
 wsgiref==0.1.2
