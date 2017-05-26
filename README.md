@@ -36,7 +36,7 @@ Default requirements
  - pycurl==7.19.5.1
  - tinys3==0.1.11
  - redis==2.10.3
- - uwsgi==2.0.12
+ - uwsgi==2.0.15
  - netaddr==0.7.18
  - ujson==1.34
  - boto==2.28.0
