@@ -1,7 +1,7 @@
 FROM python:3.6
 RUN apt-get update \
     && apt-get install -y \
-       enchant cron unixodbc unixodbc-dev openssl locales-all \
+       enchant cron unixodbc unixodbc-dev openssl locales-all python3-dev \
     && apt-get -q -y clean 
 
 ENV TZ=America/Sao_Paulo
