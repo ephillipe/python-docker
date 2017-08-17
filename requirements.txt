@@ -40,4 +40,5 @@ python-crontab==1.9.3
 pyfiglet==0.7.4
 brazilnum==0.8.0
 cassandra-driver==3.11.0
+influxdb==4.1.1
  
