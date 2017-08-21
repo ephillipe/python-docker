@@ -36,5 +36,3 @@ uwsgi==2.0.12
 cassandra-driver==3.11.0
 influxdb==4.1.1
 jsonfield==1.0.3
-
-
