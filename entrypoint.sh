@@ -18,7 +18,7 @@ service cron start
 
 # Throws error if $SOMAXCONN is set and container not in --privileged mode
 if ! [ -z "$SOMAXCONN" ]; then
-    echo "Increasing somaxconn..."
+    echo "Increasing somaxconn to ${SOMAXCONN}..."
     sysctl -w net.core.somaxconn=$SOMAXCONN
 fi
 
