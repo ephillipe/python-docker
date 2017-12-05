@@ -5,7 +5,6 @@ APP_SCRIPT=${APP_SCRIPT:-application.py}
 APP_REQUIREMENTS=${APP_REQUIREMENTS:-requirements.txt}
 APP_PORT=${APP_PORT:-8080}
 CURRENT_DIR=$(pwd)
-SOMAXCONN=${SOMAXCONN}
 
 echo "Current directory: " $CURRENT_DIR
 echo "Application script: " $APP_SCRIPT
@@ -22,7 +21,7 @@ service cron start
 
 # Throws error if $SOMAXCONN is set and container not in --privileged mode
 if ! [ -z "$SOMAXCONN" ]; then
-    echo "Increasing somaxconn..."
+    echo "Increasing somaxconn to ${SOMAXCONN}..."      
     sysctl -w net.core.somaxconn=$SOMAXCONN
 fi
 
