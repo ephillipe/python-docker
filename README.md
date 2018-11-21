@@ -24,7 +24,7 @@ Default requirements
  - psycopg2==2.5.4
  - pypgwrap==0.1.14
  - django-dbarray==0.2
- - gevent==1.1rc3
+ - gevent==2.0.17.1
  - requests==2.9.1
  - psycogreen==1.0
  - wsgiref==0.1.2
@@ -36,7 +36,7 @@ Default requirements
  - pycurl==7.19.5.1
  - tinys3==0.1.11
  - redis==2.10.3
- - uwsgi==2.0.15
+ - uwsgi==2.0.17.1
  - netaddr==0.7.18
  - ujson==1.34
  - boto==2.28.0
