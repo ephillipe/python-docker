@@ -25,4 +25,3 @@ RUN pip install --upgrade pip \
 
 ENTRYPOINT ["/var/tmp/entrypoint.sh"]
 CMD ["uwsgi", "--ini", "uwsgi.ini"]
-
