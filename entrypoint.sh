@@ -11,8 +11,8 @@ echo "Application script: " $APP_SCRIPT
 echo "Application requirements: " $APP_REQUIREMENTS
 echo "Application port: " $APP_PORT
 export PYTHONPATH="${PYTHONPATH}":$CURRENT_DIR
-echo "Current PYTHONPATH:" $PYTHONPATH
 
+echo "Current PYTHONPATH:" $PYTHONPATH
 echo "Starting cron..."
 service cron start
 
