@@ -10,7 +10,8 @@ RUN rm -vf /etc/localtime \
     && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime  \
     && echo $TZ > /etc/timezone
 
-RUN mkdir -p /usr/src/app
+RUN mkdir -p /usr/src/app \
+    && touch /usr/src/app/readme
 WORKDIR /usr/src/app
 VOLUME /usr/src/app
 
