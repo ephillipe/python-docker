@@ -13,7 +13,6 @@ RUN rm -vf /etc/localtime \
 RUN mkdir -p /usr/src/app \
     && touch /usr/src/app/readme
 WORKDIR /usr/src/app
-VOLUME /usr/src/app
 
 ADD assets/myspell.tar.gz /usr/share/enchant/myspell
 ADD entrypoint.sh /var/tmp/entrypoint.sh
