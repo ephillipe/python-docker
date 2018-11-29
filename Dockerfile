@@ -2,7 +2,7 @@ FROM python:2.7.15-stretch
 RUN apt-get update \
     && apt-get install -y \
        enchant cron unixodbc unixodbc-dev openssl locales-all \
-    && pip install --upgrade pip
+    && pip install --upgrade pip \
     && apt-get -q -y clean 
 
 ENV TZ=America/Sao_Paulo
