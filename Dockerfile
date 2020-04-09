@@ -1,4 +1,4 @@
-FROM python:2.7.15-jessie
+FROM python:3.7.5-stretch
 RUN apt-get update \
     && apt-get install -y \
        enchant cron unixodbc unixodbc-dev openssl locales-all \
