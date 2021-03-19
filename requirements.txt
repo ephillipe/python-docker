@@ -14,7 +14,7 @@ elasticache_pyclient==2.0
 futures==2.1.5
 mock==1.0.1
 django==1.7
-djangorestframework==2.4.3
+djangorestframework==3.11.2
 six==1.8.0
 python-dateutil==2.2
 psycopg2==2.5.4
